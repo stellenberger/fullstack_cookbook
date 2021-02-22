@@ -1,8 +1,10 @@
 class RecipesController < ApplicationController
-  before_action :authenticat_user! 
+  before_action :authenticate_user!
   
   def index
-    p current_user.recipes
+  end
+
+  def show
   end
 
   def create
